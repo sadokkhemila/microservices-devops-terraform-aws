@@ -55,10 +55,10 @@ pipeline {
             // Always executed
                // sh 'docker rm news-service'
                 //sh 'docker rm customize-service'
-        }
+        //}
         //success {
             // on sucessful execution
             //sh 'docker logout'   
-        }
-    }
+       // }
+   // }
 }
