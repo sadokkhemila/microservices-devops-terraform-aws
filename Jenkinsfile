@@ -25,7 +25,7 @@ pipeline {
             steps {
                 script{
                     sh 'docker run -d  --name customize-service -e FLASK_APP=run.py sadokkhemila/newsread-customize && sleep 10 && docker logs customize-service && docker stop customize-service'
-                    sh 'docker run -d  --name news-service -e FLASK_APP=run.py sadokkhemila/newsread-news && sleep 10 && docker logs news-service && docker stop news-service '
+                    sh 'docker run -d  --name news-service -e FLASK_APP=run.py sadokkhemila/newsread-news && sleep 10 && docker logs news-service && docker stop news-service'
                 }
             }
         }
