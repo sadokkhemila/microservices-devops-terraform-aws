@@ -50,15 +50,15 @@ pipeline {
    // }
         }    
 
-        post {
-        always {
+        //post {
+        //always {
             // Always executed
-                sh 'docker rm news-service'
-                sh 'docker rm customize-service'
+               // sh 'docker rm news-service'
+                //sh 'docker rm customize-service'
         }
-        success {
+        //success {
             // on sucessful execution
-            sh 'docker logout'   
+            //sh 'docker logout'   
         }
     }
 }
