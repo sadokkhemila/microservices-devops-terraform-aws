@@ -58,7 +58,7 @@ pipeline {
         }
         success {
             // on sucessful execution
-            sh 'docker logout'   
+                 sh 'docker logout'   
        }
     }
 }
